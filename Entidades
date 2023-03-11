@@ -1,1 +1,198 @@
-asd
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ET
+{
+    public class ET_Solicitud
+    {
+        private int _id;
+        private string _idUsuario;
+        private string _idTipoSolicitud;
+        private string _asunto;
+        private string _descripcionSolicitud;
+        private bool _Estado;
+        private DateTime _Fecha;
+
+        public int Id { get => _id; set => _id = value; }
+        public string IdUsuario { get => _idUsuario; set => _idUsuario = value; }
+        public string IdTipoSolicitud { get => _idTipoSolicitud; set => _idTipoSolicitud = value; }
+        public string Asunto { get => _asunto; set => _asunto = value; }
+        public string DescripcionSolicitud { get => _descripcionSolicitud; set => _descripcionSolicitud = value; }
+        public bool Estado { get => _Estado; set => _Estado = value; }
+        public DateTime Fecha { get => _Fecha; set => _Fecha = value; }
+    }
+}
+
+
+///////////////////////////////////REPORTE_ET////////////////////////////////////////////////////
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ET
+{
+    public class ET_ReportePaga
+    {
+        private int _id;
+        private string _idEmpleado;
+        private DateTime _Fecha;
+        private decimal _salarioBase;
+        private decimal _bonos;
+        private decimal _deducciones;
+        private decimal _impuestos;
+        private decimal _salarioNeto;
+
+        public int Id { get => _id; set => _id = value; }
+        public string IdEmpleado { get => _idEmpleado; set => _idEmpleado = value; }
+        public DateTime Fecha { get => _Fecha; set => _Fecha = value; }
+        public decimal SalarioBase { get => _salarioBase; set => _salarioBase = value; }
+        public decimal Bonos { get => _bonos; set => _bonos = value; }
+        public decimal Deducciones { get => _deducciones; set => _deducciones = value; }
+        public decimal Impuestos { get => _impuestos; set => _impuestos = value; }
+        public decimal SalarioNeto { get => _salarioNeto; set => _salarioNeto = value; }
+    }
+}
+
+///////////////////////////////////MARCAS_ET////////////////////////////////////////////////////
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ET
+{
+    public class ET_Marcas
+    {
+        private int _id;
+        private int _idUsuario;
+        private DateTime _hora;
+        private bool _entrada;
+        private DateTime _fecha;
+        private int _idPuesto;
+
+        public int Id { get => _id; set => _id = value; }
+        public intstring IdUsuario { get => _idUsuario; set => _idUsuario = value; }
+        public DateTime Hora { get => _hora; set => _hora = value; }
+        public bool Entrada { get => _entrada; set => _entrada = value; }
+        public DateTime Fecha { get => _fecha; set => _fecha = value; }
+        public int IdPuesto { get => _idPuesto; set => _idPuesto = value; }
+    }
+}
+
+///////////////////////////////////HORARIO_ET////////////////////////////////////////////////////
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ET
+{
+    public class ET_Producto
+    {
+        private int _id;
+        private int _idUsuario;
+        private string _dias;
+        private DateTime _horaEntrada;
+        private DateTime _horaSalida;
+        private DateTime _horasTrabajo;
+
+        public int Id { get => _id; set => _id = value; }
+        public int IdUsuario { get => _idUsuario; set => _idUsuario = value; }
+        public string Dias { get => _dias; set => _dias = value; }
+        public DateTime HoraEntrada { get => _horaEntrada; set => _horaEntrada = value; }
+        public DateTime HoraSalida { get => _horaSalida; set => _horaSalida = value; }
+        public DateTime HorasTrabajo { get => _horasTrabajo; set => _horasTrabajo = value; }
+    }
+}
+
+
+///////////////////////////////////PUESTO_ET////////////////////////////////////////////////////
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ET
+{
+    public class ET_Puesto
+    {
+        private int _id;
+        private int _idUsuario;
+        private string _nombrePuesto;
+        private string _descripcionPuesto;
+        private decimal _subTotal;
+
+        public int Id { get => _id; set => _id = value; }
+        public int IdUsuario { get => _idUsuario; set => _idUsuario = value; }
+        public string NombrePuesto { get => _nombrePuesto; set => _nombrePuesto = value; }
+        public string DescripcionPuesto { get => _descripcionPuesto; set => _descripcionPuesto = value; }
+        public decimal SubTotal { get => _subTotal; set => _subTotal = value; }
+    }
+}
+
+
+///////////////////////////////////ROLUSUARIO_ET////////////////////////////////////////////////////
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ET
+{
+    public class ET_RolUsuario
+    {
+        private int _id;
+        private string _descripcion;
+
+        public int Id { get => _id; set => _id = value; }
+        public string Descripcion { get => _descripcion; set => _descripcion = value; }
+    }
+}
+
+///////////////////////////////////PERMISOS_ET////////////////////////////////////////////////////
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ET
+{
+    public class ET_Permisos
+    {
+        private int _id;
+        private int _idRol;
+        private int _idModulo;
+        private bool _Permiso;
+
+        public int Id { get => _id; set => _id = value; }
+        public int IdRol { get => _idRol; set => _idRol = value; }
+        public int IdModulo { get => _idModulo; set => _idModulo = value; }
+        public bool Permiso { get => _Permiso; set => _Permiso = value; }
+    }
+}
+
+
+
+
+
+
+
+
+
+
