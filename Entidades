@@ -1,3 +1,5 @@
+///////////////////////////////////SOLICITUD_ET////////////////////////////////////////////////////
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -187,12 +189,83 @@ namespace ET
     }
 }
 
+///////////////////////////////////MODULO_ET////////////////////////////////////////////////////
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace ET
+{
+    public class ET_Modulo
+    {
+        private int _id;
+        private string _descripcion;
 
+        public int Id { get => _id; set => _id = value; }
+        public string Descripcion { get => _descripcion; set => _descripcion = value; }
+    }
+}
 
+///////////////////////////////////DETALLE_EX_ET////////////////////////////////////////////////////
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace ET
+{
+    public class ET_DetalleEx
+    {
+        private int  _idDetalle;
+        private int _idReporte;
+        private decimal _monto;
+        private string _descripción;
+
+        public int IdDetalle { get => _idDetalle; set => _idDetalle = value; }
+        public int IdReporte { get => _idReporte; set => _idReporte = value; }
+        public decimal Monto { get => _monto; set => _monto = value; }
+        public string Descripción { get => _descripción; set => _descripción = value; }
+    }
+}
+
+///////////////////////////////////USUARIO_ET////////////////////////////////////////////////////
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ET
+{
+    public class ET_Usuario
+    {
+        private int _id;
+        private string _cedula;
+        private string _nombre;
+        private string _apellido1;
+        private string _apellido2;
+        private string _correo;
+        private string _telefono;
+        private int _idPuesto;
+        private int _idTipoUsuario;
+
+        public int Id { get => _id; set => _id = value; }
+        public string Cedula { get => _cedula; set => _cedula = value; }
+        public string Nombre { get => _nombre; set => _nombre = value; }
+        public string Apellido1 { get => _apellido1; set => _apellido1 = value; }
+        public string Apellido2 { get => _apellido2; set => _apellido2 = value; }
+        public string Correo { get => _correo; set => _correo = value; }
+        public string Telefono { get => _telefono; set => _telefono = value; }
+        public int IdPuesto { get => _idPuesto; set => _idPuesto = value; }
+        public int IdTipoUsuario { get => _idTipoUsuario; set => _idTipoUsuario = value; }
+    }
+}
 
 
 
